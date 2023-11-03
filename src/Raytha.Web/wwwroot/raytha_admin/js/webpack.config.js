@@ -6,7 +6,7 @@ module.exports = (env, argv) =>
     const isDevBuild = !(argv.mode && argv.mode == "production");
 
     let config = {
-        entry: "./src/application.js",
+        entry: "./src/main.js",
         output:
         {
             filename: "main.js",

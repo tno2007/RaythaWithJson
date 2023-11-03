@@ -36,6 +36,7 @@ public abstract class BaseFieldType : ValueObject
     }
 
     public static BaseFieldType SingleLineText => new SingleLineTextFieldType();
+    public static BaseFieldType Json => new JsonFieldType();
     public static BaseFieldType LongText => new LongTextFieldType();
     public static BaseFieldType Wysiwyg => new WysiwygFieldType();
     public static BaseFieldType Radio => new RadioFieldType();
@@ -76,6 +77,7 @@ public abstract class BaseFieldType : ValueObject
         get
         {
             yield return SingleLineText;
+            yield return Json;
             yield return LongText;
             yield return Wysiwyg;
             yield return Radio;
